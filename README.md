@@ -29,7 +29,7 @@ cd your-repo-name
 
 ```bash
 python -m venv venv
-.env\Scriptsctivate
+.\venv\Scripts\activate
 ```
 
 #### On Linux/MacOS:
