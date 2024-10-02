@@ -52,11 +52,11 @@ def get_team_member_by_name(name: str):
 def udate_member_by_id(member_id:int, member: TeamMember):
     if member_id not in team:
         raise HTTPException(status_code=404, detail=f"Member with {member_id} not found.")
-    team[member_id] = member.dict()
+    team[member_id] = member.dict(by_alias=True)
     return f"Member with {member_id} was updated to {team[member_id]} "
 
 # Delete
-@app.put("/team/{member_id}")
+@app.delete("/team/{member_id}")
 def delete_member_by_id(member_id: int):
     if member_id not in team:
         raise HTTPException(status_code=404, detail=f"Member with {member_id} not found.")
