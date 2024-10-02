@@ -68,3 +68,5 @@ uvicorn main:app --reload
 | GET    | `/team/name/{name}` | Get a team member by name  |
 | PUT    | `/team/{member_id}` | Update a team member by ID |
 | DELETE | `/team/{member_id}` | Delete a team member by ID |
+
+[Video demo here](https://youtu.be/1xhwGPmuZuE)
